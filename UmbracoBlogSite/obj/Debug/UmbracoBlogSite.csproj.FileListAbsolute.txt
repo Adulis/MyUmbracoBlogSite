@@ -173,4 +173,3 @@ C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\System.Web.Optimization.dll
 C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\WebGrease.dll
 C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\Antlr3.Runtime.pdb
 C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\System.Web.Optimization.xml
-C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\obj\Debug\UmbracoBlogSite.csprojResolveAssemblyReference.cache
