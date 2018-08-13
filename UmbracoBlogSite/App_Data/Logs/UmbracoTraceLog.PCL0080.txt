@@ -1,0 +1,6 @@
+﻿ 2018-08-13 02:06:31,478 [P25084/D20/T23] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-08-12 02:06:31
+ 2018-08-13 06:06:31,532 [P25084/D20/T93] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-08-12 06:06:31
+ 2018-08-13 10:06:31,920 [P25084/D20/T31] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-08-12 10:06:31
+ 2018-08-13 11:22:38,227 [P25084/D20/T88] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username adulis@bredband2.com from IP address ::1
+ 2018-08-13 11:22:38,229 [P25084/D20/T88] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: adulis@bredband2.com logged in from IP address ::1
+ 2018-08-13 11:42:13,136 [P25084/D20/T88] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: adulis@bredband2.com, IP Address: ::1
