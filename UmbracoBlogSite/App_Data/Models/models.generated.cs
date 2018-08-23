@@ -19,8 +19,8 @@ using Umbraco.ModelsBuilder;
 using Umbraco.ModelsBuilder.Umbraco;
 
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "68a7bb0179c35f62")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "4889d15416df7c75")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
 
 namespace Umbraco.Web.PublishedContentModels
 {
@@ -56,6 +56,15 @@ namespace Umbraco.Web.PublishedContentModels
 		public Archetype.Models.ArchetypeModel FeaturedItems
 		{
 			get { return Umbraco.Web.PublishedContentModels.FeaturedItemControls.GetFeaturedItems(this); }
+		}
+
+		///<summary>
+		/// Visible: Disable if you want to hide the component
+		///</summary>
+		[ImplementPropertyType("visible")]
+		public bool Visible
+		{
+			get { return Umbraco.Web.PublishedContentModels.FeaturedItemControls.GetVisible(this); }
 		}
 
 		///<summary>
@@ -520,6 +529,9 @@ namespace Umbraco.Web.PublishedContentModels
 	{
 		/// <summary>Featured Items</summary>
 		Archetype.Models.ArchetypeModel FeaturedItems { get; }
+
+		/// <summary>Visible</summary>
+		bool Visible { get; }
 	}
 
 	/// <summary>Featured Item Controls</summary>
@@ -558,6 +570,18 @@ namespace Umbraco.Web.PublishedContentModels
 
 		/// <summary>Static getter for Featured Items</summary>
 		public static Archetype.Models.ArchetypeModel GetFeaturedItems(IFeaturedItemControls that) { return that.GetPropertyValue<Archetype.Models.ArchetypeModel>("featuredItems"); }
+
+		///<summary>
+		/// Visible: Disable if you want to hide the component
+		///</summary>
+		[ImplementPropertyType("visible")]
+		public bool Visible
+		{
+			get { return GetVisible(this); }
+		}
+
+		/// <summary>Static getter for Visible</summary>
+		public static bool GetVisible(IFeaturedItemControls that) { return that.GetPropertyValue<bool>("visible"); }
 	}
 
 	/// <summary>Folder</summary>

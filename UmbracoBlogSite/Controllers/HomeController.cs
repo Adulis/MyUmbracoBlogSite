@@ -19,19 +19,25 @@ namespace UmbracoBlogSite.Controllers
             List<FeaturedItem> model = new List<FeaturedItem>();
             IPublishedContent homePage = CurrentPage.AncestorOrSelf(1).DescendantsOrSelf().Where(x => x.DocumentTypeAlias == "home").FirstOrDefault();
             ArchetypeModel featuredItems = homePage.GetPropertyValue<ArchetypeModel>("featuredItems");
+            bool featuredItemsVisible = (bool)homePage.GetPropertyValue("visible");
 
-            foreach (ArchetypeFieldsetModel fieldSet in featuredItems)
+            if(featuredItemsVisible)
             {
-                int imageId = fieldSet.GetValue<int>("image");
-                var mediaItem = Umbraco.Media(imageId);
-                string imageUrl = mediaItem.Url;
+                foreach (ArchetypeFieldsetModel fieldSet in featuredItems)
+                {
 
-                int pageId = fieldSet.GetValue<int>("page");
-                IPublishedContent linkedToPage = Umbraco.TypedContent(pageId);
-                string linkUrl = linkedToPage.Url;
-                model.Add(new FeaturedItem(fieldSet.GetValue<string>("name"),fieldSet.GetValue<string>("category"), imageUrl, linkUrl));
+                    var mediaItem = fieldSet.GetValue<IPublishedContent>("image");
+                    string imageUrl = mediaItem.Url;
+
+                    var pageId = fieldSet.GetValue<IPublishedContent>("page");
+                    IPublishedContent linkedToPage = Umbraco.TypedContent(pageId.Id);
+                    string linkUrl = linkedToPage.Url;
+                    model.Add(new FeaturedItem(fieldSet.GetValue<string>("name"), fieldSet.GetValue<string>("category"), imageUrl, linkUrl));
+                }
+                return PartialView(PARTIA_VIEW_FOLDER + "_Featured.cshtml", model);
             }
-            return PartialView(PARTIA_VIEW_FOLDER+"_Featured.cshtml",model);
+            else
+                return null;
         }
 
         

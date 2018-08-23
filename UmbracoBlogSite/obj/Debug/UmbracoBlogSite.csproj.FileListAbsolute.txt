@@ -50,6 +50,7 @@ C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\roslyn\vbc.exe.config
 C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\roslyn\vbc.rsp
 C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\roslyn\VBCSCompiler.exe
 C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\roslyn\VBCSCompiler.exe.config
+C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\Antlr3.Runtime.dll
 C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\AutoMapper.dll
 C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\businesslogic.dll
 C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\ClientDependency.Core.dll
@@ -97,6 +98,7 @@ C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\System.Web.Helpers.dll
 C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\System.Web.Http.dll
 C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\System.Web.Http.WebHost.dll
 C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\System.Web.Mvc.dll
+C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\System.Web.Optimization.dll
 C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\System.Web.Razor.dll
 C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\System.Web.WebPages.Deployment.dll
 C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\System.Web.WebPages.dll
@@ -111,6 +113,8 @@ C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\Umbraco.ModelsBuilder.dll
 C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\umbraco.providers.dll
 C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\Umbraco.Web.UI.dll
 C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\UmbracoExamine.dll
+C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\WebGrease.dll
+C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\Antlr3.Runtime.pdb
 C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\AutoMapper.pdb
 C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\AutoMapper.xml
 C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\AutoMapper.Net4.pdb
@@ -151,6 +155,7 @@ C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\System.Web.Helpers.xml
 C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\System.Web.Http.xml
 C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\System.Web.Http.WebHost.xml
 C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\System.Web.Mvc.xml
+C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\System.Web.Optimization.xml
 C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\System.Web.Razor.xml
 C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\System.Web.WebPages.xml
 C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\System.Web.WebPages.Deployment.xml
@@ -168,8 +173,4 @@ C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\obj\Debug\UmbracoBlogSite.csproj.Cor
 C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\obj\Debug\UmbracoBlogSite.csproj.CopyComplete
 C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\obj\Debug\UmbracoBlogSite.dll
 C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\obj\Debug\UmbracoBlogSite.pdb
-C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\Antlr3.Runtime.dll
-C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\System.Web.Optimization.dll
-C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\WebGrease.dll
-C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\Antlr3.Runtime.pdb
-C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\bin\System.Web.Optimization.xml
+C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\obj\Debug\UmbracoBlogSite.csprojResolveAssemblyReference.cache
