@@ -13,7 +13,7 @@ namespace UmbracoBlogSite.Controllers
 {
     public class HomeController : SurfaceController
     {
-        private const string PARTIA_VIEW_FOLDER = "/Views/Partials/Home/";
+        private const string PARTIAL_VIEW_FOLDER = "/Views/Partials/Home/";
         public ActionResult RenderFeatured()
         {
             List<FeaturedItem> model = new List<FeaturedItem>();
@@ -34,7 +34,7 @@ namespace UmbracoBlogSite.Controllers
                     string linkUrl = linkedToPage.Url;
                     model.Add(new FeaturedItem(fieldSet.GetValue<string>("name"), fieldSet.GetValue<string>("category"), imageUrl, linkUrl));
                 }
-                return PartialView(PARTIA_VIEW_FOLDER + "_Featured.cshtml", model);
+                return PartialView(PARTIAL_VIEW_FOLDER + "_Featured.cshtml", model);
             }
             else
                 return null;
@@ -43,16 +43,16 @@ namespace UmbracoBlogSite.Controllers
         
         public ActionResult RenderServices()
         {
-            return PartialView(PARTIA_VIEW_FOLDER + "_Services.cshtml");
+            return PartialView(PARTIAL_VIEW_FOLDER + "_Services.cshtml");
         }
       
         public ActionResult RenderBlog()
         {
-            return PartialView(PARTIA_VIEW_FOLDER + "_Blog.cshtml");
+            return PartialView(PARTIAL_VIEW_FOLDER + "_Blog.cshtml");
         }
         public ActionResult RenderClients()
         {
-            return PartialView(PARTIA_VIEW_FOLDER + "_Clients.cshtml");
+            return PartialView(PARTIAL_VIEW_FOLDER + "_Clients.cshtml");
         }
     }
 }

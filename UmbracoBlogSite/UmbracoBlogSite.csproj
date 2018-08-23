@@ -325,6 +325,8 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Partials\SiteLayout\_Header.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\BlogPost.cshtml" />
+    <Content Include="Views\Partials\Blog\_BlogList.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -395,8 +397,10 @@
     <Content Include="Views\Partials\SiteLayout\_TitleControls.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SiteLayoutController.cs" />
+    <Compile Include="Models\BlogPreview.cs" />
     <Compile Include="Models\FeaturedItem.cs" />
     <Compile Include="Models\NavigationLink.cs" />
     <Compile Include="Models\NavigationLinkItem.cs" />

@@ -38,7 +38,7 @@ namespace UmbracoBlogSite.Controllers
         /// <returns>Partial view with a model</returns>
         public ActionResult RenderHeader()
         {
-            List<NavigationListItem> nav = GetObjectFromCache<List<NavigationListItem>>("mainNav", 5, GetNavigationModelFromDatabase);
+            List<NavigationListItem> nav = GetObjectFromCache<List<NavigationListItem>>("mainNav", 0, GetNavigationModelFromDatabase);
             //List<NavigationListItem> nav = GetNavigationModelFromDatabase();
             return PartialView(PARTIAL_VIEW_FOLDER + "_Header.cshtml", nav);
         }
@@ -70,7 +70,7 @@ namespace UmbracoBlogSite.Controllers
         private List<NavigationListItem> GetChildNavigationList(IPublishedContent page)
         {
             List<NavigationListItem> listItems = null;
-            var childPages = page.Children.Where("Visible").Where(x=>!x.HasValue("excludeFromTopNavigation") || (x.HasValue("excludeFromTopNavigation") && !x.GetPropertyValue<bool>("excludeFromTopNavigation"))  );
+            var childPages = page.Children.Where("Visible").Where(x=>x.Level<=2).Where(x=>!x.HasValue("excludeFromTopNavigation") || (x.HasValue("excludeFromTopNavigation") && !x.GetPropertyValue<bool>("excludeFromTopNavigation"))  );
             if (childPages != null && childPages.Any() && childPages.Count() > 0)
             {
                 listItems = new List<NavigationListItem>();

@@ -173,4 +173,3 @@ C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\obj\Debug\UmbracoBlogSite.csproj.Cor
 C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\obj\Debug\UmbracoBlogSite.csproj.CopyComplete
 C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\obj\Debug\UmbracoBlogSite.dll
 C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\obj\Debug\UmbracoBlogSite.pdb
-C:\Dev\Test\UmbracoBlogSite\UmbracoBlogSite\obj\Debug\UmbracoBlogSite.csprojResolveAssemblyReference.cache
