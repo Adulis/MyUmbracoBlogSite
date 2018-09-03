@@ -13,8 +13,8 @@
 @helper RenderBlogPreview(BlogPreview item)
 {
     <div class="col-md-4 text-center">
-        <div class="blog-inner">
-            <a href="@item.LinkUrl"><img class="img-responsive" src="@item.ImageUrl" alt="@item.Name"></a>
+        <div class="blog-inner ">
+            <a href="@item.LinkUrl"><img class="img-responsive " style="margin: 0 auto;"  src="@item.ImageUrl" alt="@item.Name"></a>
             <div class="desc">
                 <h3><a href="@item.LinkUrl">@item.Name</a></h3>
                 <p>@item.Introduction</p>

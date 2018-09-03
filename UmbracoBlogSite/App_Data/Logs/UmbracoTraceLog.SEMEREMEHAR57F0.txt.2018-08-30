@@ -1,0 +1,18 @@
+﻿ 2018-08-30 01:21:11,517 [P11008/D13/T36] ERROR Umbraco.Web.Strategies.ServerRegistrationEventHandler - Failed to update server record in database.
+System.Data.SqlServerCe.SqlCeException (0x80004005): There is a file sharing violation. A different process might be using the file. [ \\Mac\Home\Documents\GitHub\MyUmbracoBlogSite\UmbracoBlogSite\App_Data\Umbraco.sdf ]
+   at System.Data.SqlServerCe.SqlCeConnection.Open(Boolean silent)
+   at System.Data.SqlServerCe.SqlCeConnection.Open()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.<>c__DisplayClass20_0.<ExecuteAction>b__0()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction[TResult](Func`1 func)
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction(Action action)
+   at Umbraco.Core.Persistence.PetaPocoConnectionExtensions.OpenWithRetry(IDbConnection connection, RetryPolicy retryPolicy)
+   at Umbraco.Core.Persistence.PetaPocoConnectionExtensions.OpenWithRetry(IDbConnection connection)
+   at Umbraco.Core.Persistence.Database.OpenSharedConnection()
+   at Umbraco.Core.Persistence.Database.BeginTransaction(IsolationLevel isolationLevel)
+   at Umbraco.Core.Scoping.Scope.get_Database()
+   at Umbraco.Core.Persistence.UnitOfWork.ScopeUnitOfWork.get_Database()
+   at Umbraco.Core.Persistence.LockingRepository`1.WithWriteLocked(Action`1 action, Boolean autoCommit)
+   at Umbraco.Core.Services.ServerRegistrationService.TouchServer(String serverAddress, String serverIdentity, TimeSpan staleTimeout)
+   at Umbraco.Web.Strategies.ServerRegistrationEventHandler.TouchServerTask.PerformRun()
+ 2018-08-30 01:38:13,759 [P11008/D13/T43] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-08-29 01:38:13
+ 2018-08-30 13:31:55,014 [P11008/D13/T79] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-08-29 13:31:54

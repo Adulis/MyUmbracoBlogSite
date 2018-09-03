@@ -271,7 +271,6 @@
     <Content Include="config\imageprocessor\processing.config" />
     <Content Include="config\imageprocessor\cache.config" />
     <Content Include="App_Plugins\ModelsBuilder\package.manifest" />
-    <Content Include="Media\Web.config" />
     <Content Include="config\umbracoSettings.config" />
     <Content Include="config\trees.config" />
     <Content Include="config\tinyMceConfig.config" />
@@ -308,6 +307,18 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="packages.config" />
+    <Content Include="Media\1001\image_2.jpg" />
+    <Content Include="Media\1001\image_6.jpg" />
+    <Content Include="Media\1002\image_2.jpg" />
+    <Content Include="Media\1003\image_3.jpg" />
+    <Content Include="Media\1004\image_8.jpg" />
+    <Content Include="Media\1005\image_5.jpg" />
+    <Content Include="Media\1006\image_6.jpg" />
+    <Content Include="Media\1007\image_7.jpg" />
+    <Content Include="Media\1008\image_9.jpg" />
+    <Content Include="Media\semere circle.png" />
+    <Content Include="Media\Semere_sketch_color.jpg" />
+    <Content Include="Media\Web.config" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
     <Content Include="Views\Partials\Grid\Editors\Rte.cshtml" />
@@ -382,7 +393,9 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\modernizr-2.6.2.min.js" />
     <Content Include="Scripts\respond.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\Partials\SiteLayout\_Footer.cshtml" />
     <Content Include="Views\Partials\Home\_Featured.cshtml" />
     <Content Include="Views\Partials\Home\_Services.cshtml" />

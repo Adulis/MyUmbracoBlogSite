@@ -1,0 +1,22 @@
+﻿ 2018-08-29 05:05:36,760 [P11008/D13/T49] ERROR Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Task has failed
+System.Data.SqlServerCe.SqlCeException (0x80004005): There is a file sharing violation. A different process might be using the file. [ \\Mac\Home\Documents\GitHub\MyUmbracoBlogSite\UmbracoBlogSite\App_Data\Umbraco.sdf ]
+   at System.Data.SqlServerCe.SqlCeConnection.Open(Boolean silent)
+   at System.Data.SqlServerCe.SqlCeConnection.Open()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.<>c__DisplayClass20_0.<ExecuteAction>b__0()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction[TResult](Func`1 func)
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction(Action action)
+   at Umbraco.Core.Persistence.PetaPocoConnectionExtensions.OpenWithRetry(IDbConnection connection, RetryPolicy retryPolicy)
+   at Umbraco.Core.Persistence.PetaPocoConnectionExtensions.OpenWithRetry(IDbConnection connection)
+   at Umbraco.Core.Persistence.Database.OpenSharedConnection()
+   at Umbraco.Core.Persistence.Database.BeginTransaction(IsolationLevel isolationLevel)
+   at Umbraco.Core.Scoping.Scope.get_Database()
+   at Umbraco.Core.DatabaseContext.get_Database()
+   at Umbraco.Core.Sync.DatabaseServerMessenger.ProcessDatabaseInstructions()
+   at Umbraco.Core.Sync.DatabaseServerMessenger.Sync()
+   at Umbraco.Web.BatchedDatabaseServerMessenger.InstructionProcessing.PerformRun()
+   at Umbraco.Web.Scheduling.RecurringTaskBase.Run()
+   at Umbraco.Web.Scheduling.BackgroundTaskRunner`1.<RunAsync>d__40.MoveNext()
+ 2018-08-29 10:34:12,396 [P11008/D13/T53] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-08-28 10:34:12
+ 2018-08-29 18:47:25,805 [P11008/D13/T26] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type UmbracoBlogSite.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2018-08-29 18:47:49,601 [P11008/D13/T53] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type UmbracoBlogSite.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2018-08-29 20:06:14,579 [P11008/D13/T60] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-08-28 20:06:14
