@@ -1,0 +1,53 @@
+﻿ 2018-09-05 22:03:33,656 [P2504/D6/T52] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.11.1 application starting on SEMEREMEHAR57F0
+ 2018-09-05 22:03:33,685 [P2504/D6/T52] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2018-09-05 22:03:34,735 [P2504/D6/T52] INFO  Umbraco.Core.PluginManager - Hash determined (took 1050ms)
+ 2018-09-05 22:03:34,827 [P2504/D6/T52] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2018-09-05 22:03:34,831 [P2504/D6/T52] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2018-09-05 22:03:34,833 [P2504/D6/T52] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-09-05 22:03:35,201 [P2504/D6/T52] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 368ms)
+ 2018-09-05 22:03:35,201 [P2504/D6/T52] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2018-09-05 22:03:35,214 [P2504/D6/T52] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 12ms)
+ 2018-09-05 22:03:35,232 [P2504/D6/T52] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-09-05 22:03:35,232 [P2504/D6/T52] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-09-05 22:03:35,233 [P2504/D6/T52] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2018-09-05 22:03:35,251 [P2504/D6/T52] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 18ms)
+ 2018-09-05 22:03:35,253 [P2504/D6/T52] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-09-05 22:03:35,253 [P2504/D6/T52] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-09-05 22:03:35,253 [P2504/D6/T52] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2018-09-05 22:03:35,265 [P2504/D6/T52] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 12ms)
+ 2018-09-05 22:03:35,278 [P2504/D6/T52] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-09-05 22:03:35,278 [P2504/D6/T52] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-09-05 22:03:35,278 [P2504/D6/T52] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2018-09-05 22:03:35,297 [P2504/D6/T52] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 18ms)
+ 2018-09-05 22:03:35,298 [P2504/D6/T52] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-09-05 22:03:35,298 [P2504/D6/T52] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-09-05 22:03:35,299 [P2504/D6/T52] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2018-09-05 22:03:35,313 [P2504/D6/T52] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 14ms)
+ 2018-09-05 22:03:37,010 [P2504/D6/T52] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2018-09-05 22:03:37,396 [P2504/D6/T52] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2018-09-05 22:03:37,811 [P2504/D6/T52] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2018-09-05 22:03:37,813 [P2504/D6/T52] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2018-09-05 22:03:37,826 [P2504/D6/T52] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 4283ms)
+ 2018-09-05 22:03:38,050 [P2504/D6/T54] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - New ApplicationUrl detected: http://localhost:60450/umbraco
+ 2018-09-05 22:03:38,052 [P2504/D6/T54] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:60450/umbraco (UmbracoModule request)
+ 2018-09-05 22:03:38,517 [P2504/D6/T54] INFO  umbraco.content - Load Xml from file...
+ 2018-09-05 22:03:38,531 [P2504/D6/T54] INFO  umbraco.content - Loaded Xml from file.
+ 2018-09-05 22:03:39,345 [P2504/D6/T54] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-09-05 22:03:39,345 [P2504/D6/T54] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-09-05 22:03:39,345 [P2504/D6/T54] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2018-09-05 22:03:39,369 [P2504/D6/T54] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 24ms)
+ 2018-09-05 22:03:39,695 [P2504/D6/T54] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-09-05 22:03:39,695 [P2504/D6/T54] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-09-05 22:03:39,696 [P2504/D6/T54] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2018-09-05 22:03:39,716 [P2504/D6/T54] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 20ms)
+ 2018-09-05 22:03:43,549 [P2504/D6/T54] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type UmbracoBlogSite.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2018-09-05 22:03:48,247 [P2504/D6/T54] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-09-05 22:03:48,249 [P2504/D6/T54] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 1ms)
+ 2018-09-05 22:03:48,249 [P2504/D6/T54] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
+ 2018-09-05 22:03:48,274 [P2504/D6/T54] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 24ms)
+ 2018-09-05 22:04:12,352 [P2504/D6/T37] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type contact matches a locally declared controller of type UmbracoBlogSite.Controllers.ContactController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2018-09-05 22:04:38,678 [P2504/D6/T45] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-09-04 22:04:38
+ 2018-09-05 22:05:05,357 [P2504/D6/T46] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type UmbracoBlogSite.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2018-09-05 22:05:13,477 [P2504/D6/T47] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type contact matches a locally declared controller of type UmbracoBlogSite.Controllers.ContactController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2018-09-05 22:06:22,068 [P2504/D6/T38] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type UmbracoBlogSite.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2018-09-05 22:06:30,794 [P2504/D6/T38] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type contact matches a locally declared controller of type UmbracoBlogSite.Controllers.ContactController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.

@@ -159,6 +159,9 @@
     <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
+    <Reference Include="Recaptcha.Web, Version=2.1.0.0, Culture=neutral, PublicKeyToken=171a6ec5fa4b1644, processorArchitecture=MSIL">
+      <HintPath>..\packages\RecaptchaNet.2.1.0\lib\net451\Recaptcha.Web.dll</HintPath>
+    </Reference>
     <Reference Include="Semver, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\semver.1.1.2\lib\net451\Semver.dll</HintPath>
     </Reference>
@@ -266,6 +269,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Umbraco.sdf" />
     <Content Include="bin\Archetype.dll" />
     <Content Include="config\imageprocessor\security.config" />
     <Content Include="config\imageprocessor\processing.config" />
@@ -336,12 +340,18 @@
     <Content Include="Media\1003\image_3.jpg" />
     <Content Include="Media\1004\image_8.jpg" />
     <Content Include="Media\1005\image_5.jpg" />
+    <Content Include="Media\1005\peace-agreementjpeg.jpeg" />
+    <Content Include="Media\1005\peace-agreementjpeg_thumb.jpeg" />
     <Content Include="Media\1006\image_6.jpg" />
     <Content Include="Media\1007\image_7.jpg" />
     <Content Include="Media\1008\image_9.jpg" />
+    <Content Include="Media\1009\semere_sketch_color.jpg" />
+    <Content Include="Media\1010\peace-agreementjpeg.jpeg" />
     <Content Include="Media\semere circle.png" />
+    <Content Include="Media\Semere_Circle.jpg" />
     <Content Include="Media\Semere_sketch_color.jpg" />
     <Content Include="Media\Web.config" />
+    <Content Include="RecaptchaNet.Readme.txt" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
     <Content Include="Views\Partials\Grid\Editors\Rte.cshtml" />
@@ -362,6 +372,7 @@
     <Content Include="Views\BlogPost.cshtml" />
     <Content Include="Views\Partials\Blog\_BlogList.cshtml" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="Views\Partials\Contact\_Contact.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -435,9 +446,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\BlogController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SiteLayoutController.cs" />
     <Compile Include="Models\BlogPreview.cs" />
+    <Compile Include="Models\Contact.cs" />
     <Compile Include="Models\FeaturedItem.cs" />
     <Compile Include="Models\NavigationLink.cs" />
     <Compile Include="Models\NavigationLinkItem.cs" />

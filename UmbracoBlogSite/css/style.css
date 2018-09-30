@@ -739,6 +739,7 @@ h1, h2, h3, h4, h5, h6, figure {
   -o-box-shadow: 0px 9px 29px -9px rgba(0, 0, 0, 0.13);
   box-shadow: 0px 9px 29px -9px rgba(0, 0, 0, 0.13);
   overflow: hidden;
+  height:400px;
   margin-bottom: 40px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -753,6 +754,7 @@ h1, h2, h3, h4, h5, h6, figure {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   border-radius: 4px;
+  height:150px;
 }
 .blog-inner .desc {
   padding: 20px;
@@ -1204,5 +1206,4 @@ h1, h2, h3, h4, h5, h6, figure {
 .js .animate-box {
   opacity: 0;
 }
-
-/*# sourceMappingURL=style.css.map */
+*# sourceMappingURL=style.css.map */

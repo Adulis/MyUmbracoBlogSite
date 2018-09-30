@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+  <files>
+    <file>
+      <guid>umbracoFormsRecaptcha.dll</guid>
+      <orgPath>/bin</orgPath>
+      <orgName>umbracoFormsRecaptcha.dll</orgName>
+    </file>
+    <file>
+      <guid>FieldType.GoogleReCaptcha.cshtml</guid>
+      <orgPath>/Views/Partials/Forms/Fieldtypes</orgPath>
+      <orgName>FieldType.GoogleReCaptcha.cshtml</orgName>
+    </file>
+    <file>
+      <guid>8cd4a184-bfeb-4369-b338-cf633f0b4f7e_FieldType.GoogleReCaptcha.cshtml</guid>
+      <orgPath>/Views/Partials/Forms/Themes/default/Fieldtypes</orgPath>
+      <orgName>FieldType.GoogleReCaptcha.cshtml</orgName>
+    </file>
+    <file>
+      <guid>Recaptcha2.html</guid>
+      <orgPath>/App_Plugins/UmbracoForms/Backoffice/Common/FieldTypes</orgPath>
+      <orgName>Recaptcha2.html</orgName>
+    </file>
+  </files>
+  <info>
+    <package>
+      <name>reCAPTCHA field for Umbraco Forms</name>
+      <version>1.0.4</version>
+      <iconUrl />
+      <license url="http://opensource.org/licenses/MIT">MIT License</license>
+      <url>https://umakers.dk/</url>
+      <requirements type="strict">
+        <major>7</major>
+        <minor>6</minor>
+        <patch>6</patch>
+      </requirements>
+    </package>
+    <author>
+      <name>Oleksandr Skrypnyk</name>
+      <website>https://umakers.dk/</website>
+    </author>
+    <readme><![CDATA[The new ReCAPTCHA field helps protect your Umbraco Forms from bots without having to solve a CAPTCHA. Instead with just a single click they’ll confirm they are not a robot. We’re calling it the No CAPTCHA reCAPTCHA experience.
+
+Thanks to Andy Butland, his post inspired us  - https://our.umbraco.org/forum/umbraco-pro/contour/63765-Upgrading-ReCaptcha-to-the-Im-not-a-robot-version#comment-215220]]></readme>
+  </info>
+  <DocumentTypes />
+  <Templates />
+  <Stylesheets />
+  <Macros />
+  <DictionaryItems />
+  <Languages />
+  <DataTypes />
+</umbPackage>

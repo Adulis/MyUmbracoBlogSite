@@ -1,0 +1,62 @@
+﻿@inherits UmbracoViewPage<List<FeaturedItem>>
+@using UmbracoBlogSite.Models;
+
+
+  <div id="fh5co-featured-section">
+        <div class="container">
+            <div class="row">
+
+                @if (@Model.Count == 1)
+                {
+                    <div class="col-md-12">
+                        @RenderFeaturedItem(@Model[0], null)
+                    </div>
+                }
+                else if (@Model.Count > 1)
+                {
+                    <div class="col-md-6">
+                        @RenderFeaturedItem(@Model[0], null)
+                    </div>
+                }
+
+
+                <div class="col-md-6">
+
+
+                    @if (@Model.Count > 1)
+                    {
+                        @RenderFeaturedItem(Model[1], "featured-grid-2");
+                    }
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            @if (@Model.Count > 2)
+                            {
+                                @RenderFeaturedItem(Model[2], "featured-grid-2");
+                            }
+                        </div>
+                        <div class="col-md-6">
+                            @if (@Model.Count > 3)
+                            {
+                                @RenderFeaturedItem(Model[3], "featured-grid-2");
+                            }
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+@helper RenderFeaturedItem(FeaturedItem item, string extraClass)
+    {
+        <a href="@item.LinkUrl" class="featured-grid @extraClass" style="background-image: url('@item.ImageUrl');">
+            <div class="desc">
+                <h3>@item.Name</h3>
+                <span>@item.Category</span>
+            </div>
+        </a>
+}

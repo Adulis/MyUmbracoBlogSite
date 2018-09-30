@@ -1,4 +1,7 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+@using UmbracoBlogSite.Models
+
 @{
     Layout = "WebBase.cshtml";
 }
@@ -10,10 +13,23 @@
     <div class="container about-inner">
         @{Html.RenderAction("RenderTitleControls", "SiteLayout"); }
         @CurrentPage.GetGridHtml("contentGrid", "bootstrap3")
-
-        @*<blockquote>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-        </blockquote>*@
-
     </div>
-	</div>
+</div>
+
+
+@section meta
+{
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content=@Model.Content.GetPropertyValue("title") />
+    <meta property="og:image" content=@Umbraco.Media(@Model.Content.GetPropertyValue("articleImage"))/>
+    
+    <meta property="og:url" content="www.adulis.se" />
+    <meta property="og:site_name" content="Adulis.se" />
+    <meta property="og:description" content=@Model.Content.GetPropertyValue("articleIntroduction") />
+
+    <meta name="twitter:title" content=@Model.Content.GetPropertyValue("title") />
+    <meta name="twitter:image" content=@Umbraco.Media(@Model.Content.GetPropertyValue("articleImage")) />
+    <meta name="twitter:url" content="www.adulis.se" />
+    <meta name="twitter:card" content="" />
+}

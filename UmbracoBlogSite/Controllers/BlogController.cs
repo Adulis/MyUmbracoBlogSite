@@ -22,11 +22,12 @@ namespace UmbracoBlogSite.Controllers
 
             foreach (IPublishedContent page in blogPage.Children.OrderByDescending(x=>x.UpdateDate))
             {
+                string title = page.GetPropertyValue<string>("Title");
                 int imageId = page.GetPropertyValue<int>("ArticleImage");
                 string introduction = page.GetPropertyValue<string>("ArticleIntroduction");
                 var mediaItem = Umbraco.Media(imageId);
 
-                model.Add(new BlogPreview(page.Name, introduction, mediaItem.Url, page.Url));
+                model.Add(new BlogPreview(page.Name,title, introduction, mediaItem.Url, page.Url));
             }
             return PartialView(PARTIAL_VIEW_FOLDER + "_BlogList.cshtml", model);
         }
